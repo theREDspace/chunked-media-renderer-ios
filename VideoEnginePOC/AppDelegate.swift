@@ -15,6 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        if let fileURL = Bundle.main.url(forResource: "BigBuckBunny", withExtension: "mp4") {
+            let dataSource = FileDataSource(url: fileURL)
+            dataSource.load()
+            dataSource.nextSampleBuffer()
+            
+
+        } else {
+            print("Test video file not found")
+        }
+
+
+
         return true
     }
 

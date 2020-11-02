@@ -15,7 +15,13 @@
 		2D08D97423AAA74300FEA735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D08D97223AAA74300FEA735 /* LaunchScreen.storyboard */; };
 		2D08D97D23AAA76F00FEA735 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D08D97C23AAA76F00FEA735 /* Player.swift */; };
 		2D08D97F23AAA7A800FEA735 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D08D97E23AAA7A800FEA735 /* PlayerView.swift */; };
-		2D08D98623AAABDA00FEA735 /* BigBuckBunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D08D98523AAABDA00FEA735 /* BigBuckBunny.mp4 */; };
+		2DCFF38B24D46AF1009FA3D9 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFF38A24D46AF1009FA3D9 /* DataSource.swift */; };
+		2DCFF38D24E1C6D6009FA3D9 /* NALU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFF38C24E1C6D6009FA3D9 /* NALU.swift */; };
+		2DCFF39024E455A3009FA3D9 /* bbb_raw.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFF38E24E4555D009FA3D9 /* bbb_raw.mp4 */; };
+		2DCFF39124E45992009FA3D9 /* BigBuckBunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFF38F24E45589009FA3D9 /* BigBuckBunny.mp4 */; };
+		2DCFF39324F6C2BA009FA3D9 /* bbb_chunk.ts in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFF39224F6C2BA009FA3D9 /* bbb_chunk.ts */; };
+		2DCFF39524F6C9AB009FA3D9 /* MP4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFF39424F6C9AB009FA3D9 /* MP4.swift */; };
+		2DCFF39724F8112D009FA3D9 /* Int+Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFF39624F8112D009FA3D9 /* Int+Bytes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +35,14 @@
 		2D08D97523AAA74300FEA735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D08D97C23AAA76F00FEA735 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		2D08D97E23AAA7A800FEA735 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		2D08D98523AAABDA00FEA735 /* BigBuckBunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BigBuckBunny.mp4; sourceTree = "<group>"; };
-		2D08D98723AAAC0000FEA735 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2D61A872253F1B14009E746C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../video-engine-poc/ios/README.md"; sourceTree = "<group>"; };
+		2DCFF38A24D46AF1009FA3D9 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		2DCFF38C24E1C6D6009FA3D9 /* NALU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NALU.swift; sourceTree = "<group>"; };
+		2DCFF38E24E4555D009FA3D9 /* bbb_raw.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bbb_raw.mp4; sourceTree = "<group>"; };
+		2DCFF38F24E45589009FA3D9 /* BigBuckBunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BigBuckBunny.mp4; sourceTree = "<group>"; };
+		2DCFF39224F6C2BA009FA3D9 /* bbb_chunk.ts */ = {isa = PBXFileReference; lastKnownFileType = file; path = bbb_chunk.ts; sourceTree = "<group>"; };
+		2DCFF39424F6C9AB009FA3D9 /* MP4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4.swift; sourceTree = "<group>"; };
+		2DCFF39624F8112D009FA3D9 /* Int+Bytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Bytes.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +59,7 @@
 		2D08D95B23AAA73F00FEA735 = {
 			isa = PBXGroup;
 			children = (
-				2D08D98723AAAC0000FEA735 /* README.md */,
+				2D61A872253F1B14009E746C /* README.md */,
 				2D08D96623AAA73F00FEA735 /* VideoEnginePOC */,
 				2D08D96523AAA73F00FEA735 /* Products */,
 			);
@@ -90,6 +102,10 @@
 			children = (
 				2D08D97C23AAA76F00FEA735 /* Player.swift */,
 				2D08D97E23AAA7A800FEA735 /* PlayerView.swift */,
+				2DCFF38A24D46AF1009FA3D9 /* DataSource.swift */,
+				2DCFF39424F6C9AB009FA3D9 /* MP4.swift */,
+				2DCFF38C24E1C6D6009FA3D9 /* NALU.swift */,
+				2DCFF39624F8112D009FA3D9 /* Int+Bytes.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -97,7 +113,9 @@
 		2D08D98023AAA84800FEA735 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				2D08D98523AAABDA00FEA735 /* BigBuckBunny.mp4 */,
+				2DCFF39224F6C2BA009FA3D9 /* bbb_chunk.ts */,
+				2DCFF38F24E45589009FA3D9 /* BigBuckBunny.mp4 */,
+				2DCFF38E24E4555D009FA3D9 /* bbb_raw.mp4 */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -161,8 +179,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D08D97423AAA74300FEA735 /* LaunchScreen.storyboard in Resources */,
+				2DCFF39024E455A3009FA3D9 /* bbb_raw.mp4 in Resources */,
+				2DCFF39124E45992009FA3D9 /* BigBuckBunny.mp4 in Resources */,
+				2DCFF39324F6C2BA009FA3D9 /* bbb_chunk.ts in Resources */,
 				2D08D97123AAA74300FEA735 /* Preview Assets.xcassets in Resources */,
-				2D08D98623AAABDA00FEA735 /* BigBuckBunny.mp4 in Resources */,
 				2D08D96E23AAA74300FEA735 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,9 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DCFF38B24D46AF1009FA3D9 /* DataSource.swift in Sources */,
 				2D08D97D23AAA76F00FEA735 /* Player.swift in Sources */,
 				2D08D96823AAA73F00FEA735 /* AppDelegate.swift in Sources */,
+				2DCFF39724F8112D009FA3D9 /* Int+Bytes.swift in Sources */,
+				2DCFF38D24E1C6D6009FA3D9 /* NALU.swift in Sources */,
 				2D08D96A23AAA73F00FEA735 /* SceneDelegate.swift in Sources */,
+				2DCFF39524F6C9AB009FA3D9 /* MP4.swift in Sources */,
 				2D08D97F23AAA7A800FEA735 /* PlayerView.swift in Sources */,
 				2D08D96C23AAA73F00FEA735 /* ContentView.swift in Sources */,
 			);
@@ -246,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -300,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
